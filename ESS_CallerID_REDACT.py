@@ -45,7 +45,7 @@ INIPATH = programPath + INIFILE
 LOGFILE = r'\ENVOI_API_LOG.txt'
 
 # special error message
-MAX_RETRY_ERROR = "OS error: HTTPConnectionPool(host='portal.envoi.com', port=80): Max retries exceeded with url:"
+MAX_RETRY_ERROR = "OS error: HTTPConnectionPool(host='<REDACTED>', port=80): Max retries exceeded with url:"
 
 # write/read our ini file
 config = configparser.ConfigParser()
@@ -190,3 +190,4 @@ while True:
         time.sleep(60)
 
 log.close()
+
